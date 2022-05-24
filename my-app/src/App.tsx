@@ -1,24 +1,13 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-
+import MultiActionAreaCard from './components/MultiActionAreaCard';
+import Navbar from './components/Navbar';
+import './App.css'
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar />
+      <MultiActionAreaCard title='Welcome to Python ' author='Shaik Sohail' popularity='200k reads' read='10mins read' img="https://i.natgeofe.com/n/5506954d-6e0f-444c-aa83-a24adbe874e1/reptiles-hero_4x3.jpg"/>
+      
     </div>
   );
 }
