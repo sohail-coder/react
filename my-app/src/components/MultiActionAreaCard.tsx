@@ -58,7 +58,10 @@ const MultiActionAreaCard=({...book}:CardDetails)=>{
           },
         }}
         startIcon={<AddIcon/>}
-        style={{width:"100%"}}>Add to library</Button>
+        style={{width:"100%"}}
+        onClick={()=>alert("Added to library\nRedirecting to My Library...")}>
+          Add to library
+        </Button>
       </div>
   </div>
   );
