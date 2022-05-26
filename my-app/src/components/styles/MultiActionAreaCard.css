@@ -1,85 +1,83 @@
-
-.card{
-    position: relative;
-    width: 284px;
-    margin-top: 1%;
-    box-shadow: 1px 1px 1px gray;
-
+.card {
+  position: relative;
+  width: 284px;
+  margin-top: 1%;
+  box-shadow: 1px 1px 1px gray;
 }
 
-.card img{
-    background-color: white;
-    width: 284px;
-    left: 0%;
-    right: 0%;
-    top: 0%;
-    bottom: 0%;
-    height: 200px;
+.card img {
+  background-color: white;
+  width: 284px;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+  height: 200px;
 }
 
 .card .title {
-    width: 225px;
-    height: 23px;
-    font-family: 'Cera Pro';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 23px;
-    color: #03314B;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
+  width: 225px;
+  height: 23px;
+  /* font-family: 'Cera Pro'; */
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
+  color: #03314b;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
 }
 
-.card .card_author{
-    width: 95px;
-    height: 20px;
-    font-family: 'Cera Pro';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
-    color: #6D787E;
-    flex: none;
-    order: 1;
-    flex-grow: 0;
+.card .card_author {
+  width: 95px;
+  height: 20px;
+  /* font-family: 'Cera Pro'; */
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #6d787e;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
 }
 
-.info_read{
-left: 9.52%;
-right: 52.38%;
-top: 5%;
-bottom: 5%;
-font-family: 'Cera Pro';
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 18px;
-color: #6D787E;
+.info_read {
+  left: 9.52%;
+  right: 52.38%;
+  top: 5%;
+  bottom: 5%;
+  /* font-family: 'Cera Pro'; */
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #6d787e;
 }
 
-.extra_content{
-    display: inline-block;
-    vertical-align:middle;
+.extra_content {
+  display: inline-block;
+  vertical-align: middle;
 }
-.info1{
-    /* margin-left: 5px; */
-    display: inline-block;
-    vertical-align:middle;
-    float: left;
+.info1 {
+  /* margin-left: 5px; */
+  display: inline-block;
+  vertical-align: middle;
+  float: left;
 }
- .info2{
-     margin-right: 5px;
-    display: inline-block;
-    vertical-align:middle;
-    float: right;
+.info2 {
+  margin-right: 5px;
+  display: inline-block;
+  vertical-align: middle;
+  float: right;
 }
 
-.popularity{
-    display: inline-block;
-    vertical-align:middle;
+.popularity {
+  display: inline-block;
+  vertical-align: middle;
 }
-.button{
-    clear: both;
-    width: 100%;
+.button {
+  clear: both;
+  width: 100%;
 }
