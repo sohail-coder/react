@@ -7,6 +7,7 @@ import { Button, CardActionArea, CardActions, Grid } from "@mui/material";
 import "./styles/Bookcard.css";
 import AddIcon from "@material-ui/icons/Add";
 import AccessTimeIcon from "@mui/icons-material/AccessTime";
+import DoneIcon from "@mui/icons-material/Done";
 
 export default function BookCard({
   bookInfo: { title, author, readTime, readersCount, url },
@@ -88,7 +89,7 @@ export default function BookCard({
                 }}
                 // className="stat"
               >
-                {`${readTime} read`}
+                {`${readTime}-mins read`}
               </Typography>
             </Grid>
 
@@ -126,13 +127,13 @@ export default function BookCard({
                 color: "white",
               },
             }}
-            startIcon={<AddIcon />}
+            startIcon={isExplore ? <AddIcon /> : <DoneIcon />}
             // style={{ width: "300px", height: "52px" }}
             onClick={() =>
               alert("Added to library\nRedirecting to My Library...")
             }
           >
-            Add to library
+            {isExplore ? `Add to library` : `Finished`}
           </Button>
         </div>
 
