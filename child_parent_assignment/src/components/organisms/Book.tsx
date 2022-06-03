@@ -1,28 +1,34 @@
-import * as React from "react";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
-import { Button, CardActionArea, CardActions, Grid } from "@mui/material";
+import { Button, CardActionArea, Grid } from "@mui/material";
 import "./styles/Bookcard.css";
 import AddIcon from "@material-ui/icons/Add";
 import AccessTimeIcon from "@mui/icons-material/AccessTime";
 import DoneIcon from "@mui/icons-material/Done";
-// interface typos{
-//   isExplore:boolean;
-//   bookInfo:{
-//     title:string;
-//     author:string;
-//     readTime:string;
-//     readersCount:string;
-//     url:string
-//   }
-// }
 
-export default function BookCard({
-  bookInfo: { title, author, readTime, readersCount, url },
+export type Typos = {
+  isExplore: boolean;
+  //   bookInfo: {
+  title: string;
+  author: string;
+  readTime: number;
+  readersCount?: string;
+  url: string;
+  //   };
+};
+
+const Book = ({
+  //   bookInfo: {
+  title,
+  author,
+  readTime,
+  readersCount,
+  url,
+  // }
   isExplore,
-}) {
+}: Typos) => {
   return (
     <Card className="card">
       <CardActionArea>
@@ -153,6 +159,6 @@ export default function BookCard({
       </CardActionArea>
     </Card>
   );
-}
+};
 
-// export default BookCard;
+export default Book;
