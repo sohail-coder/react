@@ -36,20 +36,19 @@ export default function BookCard({
           <Grid container>
             <Grid item xs={12}>
               <Typography
-                className="title"
+                varient="title"
                 style={{
                   fontWeight: 700,
-                  fontFamily: "Cera Pro",
+                  // fontFamily: "Cera Pro",
                   position: "relative",
                   width: "225px",
                   height: "23px",
                   left: "1px",
-                  // fontStyle: normal,
-                  // fontWeight: 200,
+
                   fontSize: "18px",
                   lineHeight: "23px",
                   color: "#03314b",
-                  // flex: none,
+
                   order: 0,
                   flexGrow: 0,
                 }}

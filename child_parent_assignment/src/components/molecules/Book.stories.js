@@ -11,7 +11,7 @@ Primary.args = {
   // bookInfo: {
   title: "Intro to python",
   author: "Sohail Shaik",
-  url: "https://images.blinkist.com/images/books/5f90514d6cee07000608d799/1_1/250.jpg",
+  url: "./1.png",
   readTime: "15",
   // },
   isExplore: true,

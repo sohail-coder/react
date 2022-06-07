@@ -1,20 +1,24 @@
-import Book from "./components/organisms/Book";
-
+import Book from "./components/molecules/Book";
+import { theme } from "./components/molecules/themes/Theme";
+import { ThemeProvider } from "@mui/material/styles";
+import NavBar from "./components/organisms/Navbar";
+import Nav from "./components/organisms/Nav";
 function App() {
   return (
-    // <BookCard
-    //   bookInfo={title:"intro to python";author:"Sohail";
-    //             readTime="15"; url:"https://images.blinkist.com/images/books/5f90514d6cee07000608d799/1_1/250.jpg"}
-    // />
-    <div>
-      <Book
-        title="Intro to python"
-        author="Sohail Shaik"
-        isExplore={true}
-        readTime={15}
-        url="https://images.blinkist.com/images/books/5f90514d6cee07000608d799/1_1/250.jpg"
-      />
-    </div>
+    <Nav />
+    // // <ThemeProvider theme={theme}>
+    //   {/* <NavBar /> */}
+    //   // <div style={{ flexDirection: "row" }}>
+    //     <Nav />
+    //     {/* <Book
+    //       title="Intro to Python"
+    //       author="Sohail Shaik"
+    //       isExplore={true}
+    //       readTime={15}
+    //       url="./1.png"
+    //     /> */}
+    //   // </div>
+    // // </ThemeProvider>
   );
 }
 
