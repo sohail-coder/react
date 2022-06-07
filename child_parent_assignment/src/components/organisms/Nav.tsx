@@ -1,157 +1,103 @@
-import { Typography } from "@mui/material";
-import Grid from "@mui/material/Grid";
-import blinklist from "../../assets/blinklist.png";
+import { Grid } from "@mui/material";
+import { useState } from "react";
+import logo from "../../assets/blinklist.png";
 import searchIcon from "../../assets/searchIcon.png";
-import Ava from "../atoms/Avatar/index";
+import { KeyboardArrowDown, KeyboardArrowUp } from "@mui/icons-material";
 import Buttons from "../atoms/Buttons/Buttons";
+import Avatar from "@mui/material/Avatar";
+import { deepOrange } from "@mui/material/colors";
 import dropdown from "../../assets/drop_down.png";
+function Nav() {
+  const [clicked, handler] = useState(false);
 
-const Nav = () => {
   return (
-    <div>
+    <Grid
+      container
+      alignItems="center"
+      style={{ position: "relative", left: "350px", top: "20px" }}
+    >
+      <Grid item>
+        <img src={logo} alt="logo" />
+      </Grid>
       <Grid
-        container
-        direction="row"
-        style={{ justifyContent: "space-between" }}
-        // style={{ justifyContent: "space-between", display: "flex" }}
+        item
+        style={{ position: "relative", left: "30px" }}
+        sx={{
+          display: "flex",
+          alignItems: "center",
+        }}
       >
-        <Grid lg={2}></Grid>
-        <Grid
-          item
-          sm={3}
-          md={4}
-          lg={1}
+        <img src={searchIcon} alt="logo" />
+      </Grid>
+      <Grid item style={{ left: "10px", position: "relative" }}>
+        <Buttons
+          variant="text"
+          endIcon={clicked ? <KeyboardArrowUp /> : <KeyboardArrowDown />}
+          onClick={() => handler(!clicked)}
           sx={{
-            display: "flex",
-            alignItems: "center",
-          }}
-          style={
-            {
-              // position: "absolute",
-              // left: "17.36%",
-              // right: "74.02%",
-              // top: "34.88%",
-              // bottom: "34.88%",
-            }
-          }
-          // background= url(Blinklist.png);}}
-        >
-          <img src={blinklist} alt="logo" />
-        </Grid>
-        <Grid
-          item
-          sm={2}
-          md={1}
-          sx={{
-            display: "flex",
-            alignItems: "center",
-          }}
-          style={{
-            left: "-10px",
-            // position: "relative",
-            // left: "8.33%",
-            // right: "7.03%",
-            // top: "8.33%",
-            // bottom: "7.03%",
-            /* Grey/500 */
-            // background: "#042330",
-          }}
-        >
-          <img src={searchIcon} alt="logo" />
-        </Grid>
-        <Grid
-          item
-          sm={2}
-          lg={1}
-          sx={{
-            display: "flex",
-            alignItems: "center",
-          }}
-          style={{
-            width: "57px",
-            // height: "20px",
-
-            /* Body 1 */
-
-            fontFamily: "Cera Pro",
-            fontStyle: "normal",
-            fontWeight: "500",
-            fontSize: "16px",
-            lineHeight: "20px",
-
-            /* Text/high_emphasis */
-
+            // width: "150px",
+            left: "50px",
+            height: "20px",
+            textTransform: "none",
             color: "#03314B",
-
-            /* Inside auto layout */
-
-            flex: "none",
-            order: "0",
-            flexGrow: "0",
-          }}
-        >
-          <Typography variant="body1">{`Explore`}</Typography>
-        </Grid>
-        <Grid
-          item
-          sm={2}
-          md={2}
-          lg={2}
-          sx={{
-            display: "flex",
-            alignItems: "center",
-          }}
-          style={{
-            // width: "57px",
-            // height: "20px",
-
-            /* Body 1 */
-
-            fontFamily: "Cera Pro",
-            fontStyle: "normal",
-            fontWeight: "500",
             fontSize: "16px",
-            lineHeight: "20px",
-
-            /* Text/high_emphasis */
-
-            color: "#03314B",
-
-            /* Inside auto layout */
-
-            flex: "none",
-            order: "0",
-            flexGrow: "0",
-          }}
-        >
-          <Typography>{`My Library`}</Typography>
-        </Grid>
-        <Grid lg={2}></Grid>
-        <Grid
-          direction="row"
-          container
-          sm={2}
-          lg={1}
-          style={{
             position: "relative",
-            // left: "0%",
-            // right: "0%",
-            // top: "0%",
-            // bottom: "0%",
-            float: "right",
-            /* alpha/primary/300 */
-
-            // background: "#69A6E3",
           }}
         >
-          <Ava text="S" />
-          <Buttons style={{ left: "-15px" }}>
+          Explore
+        </Buttons>
+      </Grid>
+      <Grid item>
+        <Buttons
+          variant="text"
+          sx={{
+            // width: "180px",
+            left: "80px",
+            height: "20px",
+            textTransform: "none",
+            color: "#03314B",
+            fontSize: "16px",
+            position: "relative",
+          }}
+        >
+          My Library
+        </Buttons>
+      </Grid>
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "row",
+          left: "80px",
+          position: "relative",
+        }}
+      >
+        <Grid
+          item
+          sx={{
+            display: "flex",
+            position: "relative",
+            alignItems: "center",
+            left: "270px",
+          }}
+        >
+          <Avatar sx={{ bgcolor: deepOrange[500] }}>SK</Avatar>
+        </Grid>
+        <Grid
+          item
+          sx={{
+            display: "flex",
+            position: "relative",
+            alignItems: "center",
+            left: "250px",
+          }}
+        >
+          <Buttons>
             <img src={dropdown} alt="dropdown" />
           </Buttons>
         </Grid>
-        <Grid lg={2}></Grid>
-      </Grid>
-    </div>
+      </div>
+    </Grid>
   );
-};
+}
+
 export default Nav;

@@ -18,8 +18,9 @@ const Navbar = () => {
       alignItems="center"
       role="Header"
       sx={{
-        position: "absolute",
+        position: "relative",
         top: "20px",
+        width: "1440px",
         height: "86px",
       }}
     >
@@ -33,7 +34,7 @@ const Navbar = () => {
           display: "flex",
           alignItems: "center",
           background: "#FFFFFF",
-          // width: "925px",
+          width: "925px",
           position: "absolute",
           left: "18%",
         }}
@@ -42,7 +43,7 @@ const Navbar = () => {
           item
           sx={{
             height: "24px",
-            // width: "150px",
+            width: "150px",
           }}
         >
           <img src={blinklist} alt="blinklist" width="129" height="26" />
@@ -64,7 +65,7 @@ const Navbar = () => {
             endIcon={clicked ? <KeyboardArrowUp /> : <KeyboardArrowDown />}
             onClick={() => handler(!clicked)}
             sx={{
-              // width: "79px",
+              width: "79px",
               height: "20px",
               textTransform: "none",
               color: "#03314B",
@@ -79,7 +80,7 @@ const Navbar = () => {
           <Buttons
             variant="text"
             sx={{
-              // width: "120px",
+              width: "120px",
               height: "20px",
               textTransform: "none",
               color: "#03314B",
@@ -90,22 +91,14 @@ const Navbar = () => {
           </Buttons>
         </Grid>
 
-        <Grid
-          item
-          sx={{
-            position: "absolute",
-            // display: "flex",
-            left: "auto",
-          }}
-          style={{ alignContent: "flex-end" }}
-        >
-          <Ava text="A" />
+        <Grid item sx={{ position: "absolute", left: "98%" }}>
+          <Ava text="SK" />
         </Grid>
 
         <Grid
           item
           sx={{
-            // width: "1440px",
+            width: "1440px",
             position: "absolute",
             left: "100%",
           }}

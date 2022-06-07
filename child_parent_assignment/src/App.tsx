@@ -1,24 +1,26 @@
-import Book from "./components/molecules/Book";
+// import Book from "./components/molecules/Book";
 import { ThemeProvider } from "@mui/material/styles";
-import NavBar from "./components/organisms/Navbar";
 import Nav from "./components/organisms/Nav";
 import mainTheme from "./theme1/mainTheme";
+import Footer from "./components/organisms/Footer";
 function App() {
   return (
-    // <Nav />
+    // <Navbar />
+
     <ThemeProvider theme={mainTheme}>
-      {/* <NavBar /> */}
-      {/* <div style={{ flexDirection: "row" }}> */}
-      {/* //     <Nav /> */}
-      <Book
-        title="Intro to Python"
-        author="Sohail Shaik"
-        isExplore={true}
-        readTime={15}
-        url="./1.png"
-      />
-      {/* //   // </div> */}
+      <Nav />
+      <Footer />
     </ThemeProvider>
+    // {/* <div style={{ flexDirection: "row" }}> */}
+    // {/* //     <Nav /> */}
+    // {/* <Book
+    //   title="Intro to Python"
+    //   author="Sohail Shaik"
+    //   isExplore={true}
+    //   readTime={15}
+    //   url="./1.png"
+    // /> */}
+    // {/* //   // </div> */}
   );
 }
 
