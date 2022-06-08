@@ -70,7 +70,7 @@ const footer = () => {
                 item
                 container
                 direction="column"
-                rowGap={2}
+                rowGap={3}
                 sx={{ width: "214px", height: "224px" }}
               >
                 <Grid item>

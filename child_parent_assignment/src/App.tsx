@@ -4,7 +4,7 @@ import Nav from "./components/organisms/Nav";
 import mainTheme from "./theme1/mainTheme";
 import Footer from "./components/organisms/Footer";
 import { Grid, Typography } from "@mui/material";
-
+import BookLoop from "./utils/BookLoop";
 function App() {
   return (
     // <Navbar />
@@ -41,7 +41,8 @@ function App() {
           spacing={4}
           sx={{ top: "200px", position: "relative" }}
         >
-          <Grid item lg={4} style={{ bottom: "50px", position: "relative" }}>
+          <BookLoop />
+          {/* <Grid item lg={4} style={{ bottom: "50px", position: "relative" }}>
             <Book
               title="Intro to Python"
               author="Sohail Shaik"
@@ -94,16 +95,7 @@ function App() {
               readTime={15}
               url="./1.png"
             />
-          </Grid>
-          <Grid item lg={4} style={{ bottom: "50px", position: "relative" }}>
-            <Book
-              title="Intro to Python"
-              author="Sohail Shaik"
-              // isExplore={true}
-              readTime={15}
-              url="./1.png"
-            />
-          </Grid>
+          </Grid> */}
           {/* <Grid container> */}
         </Grid>
         <Grid item lg={12} style={{ position: "relative", top: "-100px" }}>
