@@ -11,11 +11,7 @@ function Nav() {
   const [clicked, handler] = useState(false);
 
   return (
-    <Grid
-      container
-      alignItems="center"
-      style={{ position: "relative", left: "350px", top: "20px" }}
-    >
+    <Grid container alignItems="center" style={{ position: "relative" }}>
       <Grid item>
         <img src={logo} alt="logo" />
       </Grid>

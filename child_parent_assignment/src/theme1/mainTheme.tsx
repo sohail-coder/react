@@ -27,7 +27,7 @@ declare module "@mui/material/Typography" {
 const customTheme = createTheme({
   palette: {
     primary: {
-      main: "#2CE080",
+      main: "#0365F2",
       light: "#E2F2E9",
       dark: "#22C870",
     },
@@ -38,9 +38,12 @@ const customTheme = createTheme({
   typography: {
     fontFamily: "Cera Pro",
     heading: {
+      position: "relative",
+      fontStyle: "normal",
+      fontWeight: "700",
       fontSize: "36px",
       lineHeight: "45px",
-      fontWeight: 700,
+      color: "#03314B",
     },
     heading3: {
       fontSize: "24px",

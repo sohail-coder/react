@@ -1,4 +1,5 @@
 import Card from "@mui/material/Card";
+import React from "react";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
@@ -8,7 +9,7 @@ import AddIcon from "@material-ui/icons/Add";
 import AccessTimeIcon from "@mui/icons-material/AccessTime";
 
 export type Typos = {
-  isExplore: boolean;
+  // isExplore: boolean;
   // bookInfo: {
   title: string;
   author: string;
@@ -25,9 +26,10 @@ const Book = ({
   readTime,
   readersCount,
   url,
-  // },
-  isExplore,
-}: Typos) => {
+}: // },
+
+Typos) => {
+  const [isExplore, setIsExplore] = React.useState(true);
   // const classes = useStyles();
   return (
     <Card className="card">
@@ -54,7 +56,6 @@ const Book = ({
               style={{
                 position: "relative",
                 top: "28px",
-                left: "-3.5px",
                 height: "1px",
               }}
             >
@@ -74,14 +75,12 @@ const Book = ({
             variant="outlined"
             sx={{
               ":hover": {
-                bgcolor: "primary.main",
+                bgcolor: "#0365F2",
                 color: "white",
               },
             }}
             startIcon={isExplore && <AddIcon />}
-            onClick={() =>
-              alert("Added to library\nRedirecting to My Library...")
-            }
+            onClick={() => setIsExplore(!isExplore)}
           >
             {isExplore ? (
               <Typography variant="body2">{"Add to library"}</Typography>
