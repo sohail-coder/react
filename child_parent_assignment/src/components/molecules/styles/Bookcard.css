@@ -163,7 +163,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 14px 24px;
+  /* padding: 14px 24px; */
   gap: 8px;
 
   position: absolute;
@@ -184,8 +184,8 @@
 
 .btn-box {
   width: 300px;
-  height: 52px;
-
+  height: 45px;
+  right: 10px;
   /* Body 1 */
 
   font-family: "Cera Pro";

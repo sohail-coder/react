@@ -8,6 +8,7 @@
     "@material-ui/core": "^4.12.4",
     "@material-ui/icons": "^4.11.3",
     "@mui/icons-material": "^5.8.0",
+    "@mui/lab": "^5.0.0-alpha.85",
     "@mui/material": "^5.8.1",
     "@mui/styled-engine-sc": "^5.8.0",
     "@testing-library/jest-dom": "^5.16.4",
@@ -73,8 +74,8 @@
     "@storybook/react": "^6.5.5",
     "@storybook/testing-library": "^0.0.11",
     "babel-plugin-named-exports-order": "^0.0.2",
-    "prop-types": "^15.8.1",
     "json-loader": "^0.5.7",
+    "prop-types": "^15.8.1",
     "webpack": "^5.72.1"
   }
 }

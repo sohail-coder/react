@@ -11,7 +11,11 @@ function Nav() {
   const [clicked, handler] = useState(false);
 
   return (
-    <Grid container alignItems="center" style={{ position: "relative" }}>
+    <Grid
+      container
+      alignItems="center"
+      style={{ position: "absolute", left: "250px" }}
+    >
       <Grid item>
         <img src={logo} alt="logo" />
       </Grid>
@@ -69,11 +73,12 @@ function Nav() {
       >
         <Grid
           item
+          // lg={12}
           sx={{
             display: "flex",
             position: "relative",
             alignItems: "center",
-            left: "270px",
+            left: "570px",
           }}
         >
           <Avatar sx={{ bgcolor: deepOrange[500] }}>SK</Avatar>
@@ -84,7 +89,7 @@ function Nav() {
             display: "flex",
             position: "relative",
             alignItems: "center",
-            left: "250px",
+            left: "560px",
           }}
         >
           <Buttons>

@@ -3,27 +3,35 @@ import React from "react";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
-import { Button, CardActionArea, Grid } from "@mui/material";
+import { Button, CardActionArea, CardActions, Grid } from "@mui/material";
 import "./styles/Bookcard.css";
-import AddIcon from "@material-ui/icons/Add";
 import AccessTimeIcon from "@mui/icons-material/AccessTime";
-
+import Linear from "../atoms/ProgressBar/Linear";
+import Box from "@mui/material/Box";
 export type Typos = {
   // isExplore: boolean;
   // bookInfo: {
+  id: number;
   title: string;
   author: string;
-  readTime: number;
+  read: string;
+  time: string;
   readersCount?: string;
   url: string;
+  isExplore: string;
+  func: ({ id }: Id) => void;
   // };
 };
+interface Id {
+  id: number;
+}
 
 const Book = ({
-  // bookInfo: {
+  id,
   title,
   author,
-  readTime,
+  read,
+  time,
   readersCount,
   url,
 }: // },
@@ -63,13 +71,12 @@ Typos) => {
                 style={{ position: "absolute", height: "20px", top: "2px" }}
                 className="icon"
               />
-              <Typography variant="caption">
-                {`${readTime}-mins read`}
-              </Typography>
+              <Typography variant="caption">{`${time}-mins read`}</Typography>
             </Grid>
           </Grid>
         </CardContent>
-        <div className="box">
+        <CardActions className="box">
+          {/* <Box> */}
           <Button
             className="btn-box"
             variant="outlined"
@@ -79,16 +86,16 @@ Typos) => {
                 color: "white",
               },
             }}
-            startIcon={isExplore && <AddIcon />}
+            // startIcon={isExplore && <AddIcon />}
             onClick={() => setIsExplore(!isExplore)}
           >
             {isExplore ? (
-              <Typography variant="body2">{"Add to library"}</Typography>
-            ) : (
               <Typography variant="body2">{"Finished"}</Typography>
+            ) : (
+              <Typography variant="body2">{"Read Again"}</Typography>
             )}
           </Button>
-        </div>
+        </CardActions>
       </CardActionArea>
     </Card>
   );

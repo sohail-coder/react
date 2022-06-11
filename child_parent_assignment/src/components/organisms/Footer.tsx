@@ -1,9 +1,7 @@
 import { Grid, Typography } from "@mui/material";
 import React from "react";
-// import { customStyles } from '../../../theme/index';
-// import Typo from "../atoms/Typo/index";
+
 import BlinkList from "../../assets/blinklist.png";
-// import { ThemeProvider } from "@mui/material/styles";
 
 const footer = () => {
   return (
@@ -14,9 +12,9 @@ const footer = () => {
         width: "100%",
         background: "#F1F6F4",
         alignItems: "center",
-        justifyContent: "center",
-        position: "absolute",
-        top: "50vh",
+        justifyContent: "space-around",
+        position: "relative",
+        top: "10vh",
       }}
       role="Footer"
     >
@@ -70,13 +68,13 @@ const footer = () => {
                 item
                 container
                 direction="column"
-                rowGap={3}
+                rowGap={2}
                 sx={{ width: "214px", height: "224px" }}
               >
                 <Grid item>
                   <Typography
                     style={{ color: "#03314B" }}
-                    variant="body1"
+                    // variant="body1"
                     component="div"
                   >
                     {"Editorial"}
@@ -85,7 +83,7 @@ const footer = () => {
 
                 <Grid item>
                   <Typography
-                    variant="body2"
+                    // variant="body2"
                     style={{ color: "#6D787E" }}
                     component="div"
                   >
@@ -94,18 +92,14 @@ const footer = () => {
                 </Grid>
 
                 <Grid item>
-                  <Typography
-                    style={{ color: "#6D787E" }}
-                    variant="body2"
-                    component="div"
-                  >
+                  <Typography style={{ color: "#6D787E" }} component="div">
                     {"What is Nonfiction?"}
                   </Typography>
                 </Grid>
 
                 <Grid item>
                   <Typography
-                    variant="body2"
+                    // variant="body2"
                     component="div"
                     style={{ color: "#6D787E" }}
                   >
@@ -115,7 +109,7 @@ const footer = () => {
 
                 <Grid item>
                   <Typography
-                    variant="body2"
+                    // variant="body2"
                     component="div"
                     style={{ color: "#6D787E" }}
                   >
@@ -132,7 +126,7 @@ const footer = () => {
                 container
                 direction="column"
                 rowGap={2}
-                sx={{ width: "132px", height: "224px" }}
+                sx={{ width: "200px", height: "224px" }}
               >
                 <Grid item>
                   <Typography
@@ -146,7 +140,7 @@ const footer = () => {
 
                 <Grid item>
                   <Typography
-                    variant="body2"
+                    // variant="body2"
                     component="div"
                     style={{ color: "#6D787E" }}
                   >
@@ -156,7 +150,7 @@ const footer = () => {
 
                 <Grid item>
                   <Typography
-                    variant="body2"
+                    // variant="body2"
                     component="div"
                     style={{ color: "#6D787E" }}
                   >
@@ -166,7 +160,7 @@ const footer = () => {
 
                 <Grid item>
                   <Typography
-                    variant="body2"
+                    // variant="body2"
                     component="div"
                     style={{ color: "#6D787E" }}
                   >
@@ -176,7 +170,7 @@ const footer = () => {
 
                 <Grid item>
                   <Typography
-                    variant="body2"
+                    // variant="body2"
                     component="div"
                     style={{ color: "#6D787E" }}
                   >
@@ -186,7 +180,7 @@ const footer = () => {
 
                 <Grid item>
                   <Typography
-                    variant="body2"
+                    // variant="body2"
                     component="div"
                     style={{ color: "#6D787E" }}
                   >
@@ -205,7 +199,7 @@ const footer = () => {
               >
                 <Grid item>
                   <Typography
-                    variant="body1"
+                    // variant="body1"
                     component="div"
                     style={{ color: "#03314B" }}
                   >
@@ -215,7 +209,7 @@ const footer = () => {
 
                 <Grid item>
                   <Typography
-                    variant="body2"
+                    // variant="body2"
                     component="div"
                     style={{ color: "#6D787E" }}
                   >
@@ -225,7 +219,7 @@ const footer = () => {
 
                 <Grid item>
                   <Typography
-                    variant="body2"
+                    // variant="body2"
                     component="div"
                     style={{ color: "#6D787E" }}
                   >
@@ -235,7 +229,7 @@ const footer = () => {
 
                 <Grid item>
                   <Typography
-                    variant="body2"
+                    // variant="body2"
                     component="div"
                     style={{ color: "#6D787E" }}
                   >
@@ -245,7 +239,7 @@ const footer = () => {
 
                 <Grid item>
                   <Typography
-                    variant="body2"
+                    // variant="body2"
                     component="div"
                     style={{ color: "#6D787E" }}
                   >
